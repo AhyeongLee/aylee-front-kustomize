@@ -1,8 +1,8 @@
 bases:
   - ../../base
-# patchesStrategicMerge:
-#   - rollout-patch.yaml
-#   - service-patch.yaml
+patchesStrategicMerge:
+  - gateway-patch.yaml
+  - virtualservice-patch.yaml
 namespace: dev-aylee
 namePrefix: dev-
 commonLabels:
