@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: aylee-front
+  labels:
+    app.kubernetes.io/name: aylee-front
+spec:
+  hosts:
+    - aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
+  gateways:
+    - aylee-front
+  http:
+    - name: Canary
+      match:
+        - headers:
+            rollout-version:
+              exact: "Canary"
+      route:
+        - destination:
+            host: aylee-front
+            subset: Canary
+    - name: Random
+      route:
+        - destination:
+            host: aylee-front

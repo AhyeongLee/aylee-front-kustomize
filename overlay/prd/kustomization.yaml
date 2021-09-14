@@ -1,0 +1,9 @@
+bases:
+  - ../../base
+# patchesStrategicMerge:
+#   - rollout-patch.yaml
+#   - service-patch.yaml
+namespace: dev-aylee
+namePrefix: dev-
+commonLabels:
+  env: dev

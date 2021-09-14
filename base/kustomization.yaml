@@ -1,0 +1,7 @@
+resources:
+  - gateway.yaml
+  - hpa.yaml
+  - rollout.yaml
+  - service.yaml
+  - serviceaccount.yaml
+  - virtualservice.yaml

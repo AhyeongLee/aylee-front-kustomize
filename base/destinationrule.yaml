@@ -1,0 +1,13 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: aylee-front
+spec:
+  host: "aylee-front"
+  subsets:
+    - name: Stable
+      labels:
+        app.kubernetes.io/version: 2021-09-14T00.00.00
+    - name: Canary
+      labels:
+        app.kubernetes.io/version: 2021-09-14T00.00.00
