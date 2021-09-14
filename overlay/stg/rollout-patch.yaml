@@ -1,0 +1,8 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: aylee-front
+spec:
+  template:
+    spec:
+      serviceAccountName: stg-aylee-front

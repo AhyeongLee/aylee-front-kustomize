@@ -1,0 +1,8 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: aylee-front
+spec:
+  servers:
+    - hosts:
+        - stg-aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com

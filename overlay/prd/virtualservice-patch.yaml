@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: aylee-front
+spec:
+  hosts:
+    - prd-aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
