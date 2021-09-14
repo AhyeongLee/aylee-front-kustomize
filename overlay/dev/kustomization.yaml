@@ -4,6 +4,7 @@ patchesStrategicMerge:
   - gateway-patch.yaml
   - virtualservice-patch.yaml
   - rollout-patch.yaml
+  - hpa-patch.yaml
 namespace: dev-aylee
 namePrefix: dev-
 commonLabels:
