@@ -2,8 +2,6 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: aylee-front
-  labels:
-    app.kubernetes.io/name: aylee-front
 spec:
   selector:
     istio: ingressgateway
@@ -13,4 +11,4 @@ spec:
         name: http
         protocol: HTTP
       hosts:
-        - aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
+        - aylee-front.apps.ldcc-cluster.gavd.p1.openshiftapps.com

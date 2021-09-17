@@ -5,3 +5,19 @@ metadata:
 spec:
   hosts:
     - stg-aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
+  gateways:
+    - stg-aylee-front
+  http:
+    - name: Canary
+      match:
+        - headers:
+            rollout-version:
+              exact: "Canary"
+      route:
+        - destination:
+            host: stg-aylee-front
+            subset: Canary
+    - name: Random
+      route:
+        - destination:
+            host: stg-aylee-front

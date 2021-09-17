@@ -6,3 +6,7 @@ spec:
   servers:
     - hosts:
         - prd-aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
+      port:
+        number: 80
+        name: http
+        protocol: HTTP

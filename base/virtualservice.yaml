@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: aylee-front
 spec:
   hosts:
-    - aylee-demo.apps.ldcc-cluster.gavd.p1.openshiftapps.com
+    - aylee-front.apps.ldcc-cluster.gavd.p1.openshiftapps.com
   gateways:
     - aylee-front
   http:

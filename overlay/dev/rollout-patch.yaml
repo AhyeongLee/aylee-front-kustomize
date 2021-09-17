@@ -4,5 +4,8 @@ metadata:
   name: aylee-front
 spec:
   template:
+    metadata:
+      labels:
+        env: dev
     spec:
       serviceAccountName: dev-aylee-front

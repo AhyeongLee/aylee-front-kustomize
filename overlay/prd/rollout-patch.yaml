@@ -4,5 +4,8 @@ metadata:
   name: aylee-front
 spec:
   template:
+    metadata:
+      labels:
+        env: prd
     spec:
       serviceAccountName: prd-aylee-front
